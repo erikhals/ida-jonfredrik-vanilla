@@ -150,9 +150,11 @@ nav a:hover {
 }
 
 .logo {
-  height: 10px;
   width: 300px;
-  background: url(assets/Horizontal-Line.svg);
+}
+
+.logo a:hover {
+  border: 0;
 }
 
 .knapp {
@@ -266,6 +268,8 @@ nav a:hover {
 
 #bilder2 {
   height: 100vh;
+  max-width: 1140px;
+  margin: auto;
   overflow: hidden;
   position: relative;
 }
@@ -331,7 +335,7 @@ nav a:hover {
 }
 
 #bilder3 {
-  height: 50vh;
+  height: 100vh;
   max-width: 1140px;
   margin: auto;
   position: relative;
@@ -349,6 +353,7 @@ nav a:hover {
 
 #svar {
   background: rgba(255, 255, 255, 0.1);
+  padding-bottom: 80px;
 }
 
 #svar .alert {
@@ -390,6 +395,7 @@ nav a:hover {
 #svar label {
   line-height: 2;
   margin-right: 1em;
+  white-space: nowrap;
 }
 
 #svar button {
@@ -431,6 +437,7 @@ footer {
   background-position: center;
 }
 
+/* Media queries */
 @media (max-width: 768px) {
   nav {
     width: 95%;
@@ -439,6 +446,22 @@ footer {
   }
   nav li {
     padding: 10px;
+  }
+  .cornergraphic1 {
+    max-width: 30%;
+    left: 5px;
+    bottom: 60%;
+  }
+  .blomster1 {
+    left: 0;
+    max-width: 80%;
+  }
+  .blomster2 {
+    max-width: 80%;
+  }
+  .blomster3 {
+    right: 0;
+    max-width: 80%;
   }
   .smokin1 {
     width: 50%;
