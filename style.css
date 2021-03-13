@@ -160,6 +160,7 @@ nav a:hover {
   padding: 10px;
   color: black;
   background-color: var(--primary);
+  white-space: nowrap;
 }
 
 .knapp:hover {
@@ -249,16 +250,10 @@ nav a:hover {
   padding: 0 20px;
 }
 
-@media (max-width: 768px) {
-  .daggrid {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
 .dag {
   padding: 20px 40px;
   background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
 .dag ul {
@@ -298,7 +293,7 @@ nav a:hover {
 }
 
 #informasjon div {
-  max-width: 400px;
+  max-width: 500px;
   padding: 20px;
 }
 
@@ -307,7 +302,28 @@ nav a:hover {
 }
 
 #informasjon li {
-  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+#informasjon li img {
+  width: 40px;
+  padding-top: 10px;
 }
 
 #informasjon h2 {
@@ -413,5 +429,34 @@ footer {
   height: 60vh;
   background-size: cover;
   background-position: center;
+}
+
+@media (max-width: 768px) {
+  nav {
+    width: 95%;
+    padding: 5px;
+    font-size: 0.9em;
+  }
+  nav li {
+    padding: 10px;
+  }
+  .smokin1 {
+    width: 50%;
+  }
+  .smokin2 {
+    width: 40%;
+  }
+  .cornergraphic2 {
+    left: 0;
+  }
+  #invitation p {
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 1em;
+  }
+  .daggrid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 /*# sourceMappingURL=style.css.map */
