@@ -394,6 +394,11 @@ nav a:hover {
   background-color: var(--white);
 }
 
+#my-response-iframe {
+  visibility: hidden;
+  height: 1px;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;

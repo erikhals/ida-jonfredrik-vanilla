@@ -346,6 +346,10 @@ nav {
     }
   }
 }
+#my-response-iframe {
+  visibility: hidden;
+  height: 1px;
+}
 footer {
   display: flex;
   justify-content: center;
