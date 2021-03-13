@@ -13,6 +13,7 @@ if (iframe) {
     setTimeout(function () {
       document.querySelector(".alert").style.display = "none";
     }, 4000);
-    // now you can do stuff, such as displaying a message or redirecting to a new page.
+
+    iframe.parentNode.removeChild(iframe);
   };
 }
