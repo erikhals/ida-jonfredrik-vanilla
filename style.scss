@@ -1,0 +1,357 @@
+@import url(https://fonts.googleapis.com/css?family=Pompiere);
+@import url(https://fonts.googleapis.com/css?family=Rouge+Script);
+@import url(https://fonts.googleapis.com/css?family=Patrick+Hand);
+
+:root {
+  --primary: #f19641;
+  --dark: #173c48;
+  --white: #ffebd3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--dark);
+  color: var(--white);
+  font-family: "Pompiere";
+  font-size: 1.3rem;
+}
+
+p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: #f19641;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 1.6rem;
+  text-align: center;
+  padding-bottom: 1em;
+  &::after {
+    background-image: url(/assets/Ornament-center.svg);
+    background-size: 100px 50px;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    width: 100px;
+    height: 50px;
+    content: "";
+  }
+}
+
+h2 {
+  font-size: 1.4rem;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+
+h3 {
+  font-size: 1.3rem;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  min-height: 100vh;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 100%;
+  max-width: 1140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Top Bar */
+.topbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--dark);
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 85%;
+  max-width: 1140px;
+  margin: 0 auto;
+
+  & ul {
+    display: flex;
+  }
+
+  & li {
+    text-transform: uppercase;
+    list-style: none;
+    padding: 20px;
+  }
+
+  & a {
+    color: #ffebd3;
+    &:hover {
+      border-bottom: 2px var(--primary) solid;
+    }
+  }
+}
+
+.logo {
+  height: 10px;
+  width: 300px;
+  background: url(assets/Horizontal-Line.svg);
+}
+
+.knapp {
+  border-radius: 5px;
+  padding: 10px;
+  color: black;
+  background-color: var(--primary);
+  &:hover {
+    border: none;
+    background-color: var(--white);
+  }
+}
+
+/*Sections*/
+
+#invitation {
+  text-align: center;
+  & p {
+    font-family: "Rouge Script";
+    text-transform: none;
+    font-size: 96px;
+    line-height: 96px;
+    padding-bottom: 40px;
+  }
+  & h3 {
+    text-transform: uppercase;
+  }
+  & h2 {
+    font-size: 1.4em;
+  }
+}
+
+.ornament {
+  padding-top: 20px;
+  width: 100px;
+}
+
+#bilder1 {
+  height: 100vh;
+  max-width: 1140px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+.cornergraphic1 {
+  position: absolute;
+  bottom: 75%;
+  left: 18%;
+  transform: rotate(90deg);
+  z-index: 6;
+}
+.blomster1 {
+  position: absolute;
+  left: 20%;
+  bottom: 40%;
+  max-width: 60%;
+  max-height: 40vh;
+  z-index: 3;
+}
+.blomster2 {
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  max-width: 40%;
+  max-height: 30%;
+  z-index: 0;
+}
+.blomster3 {
+  position: absolute;
+  right: 15%;
+  top: 60%;
+  max-width: 40%;
+  max-height: 30%;
+  z-index: 2;
+}
+
+.daggrid {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 0 20px;
+}
+
+@media (max-width: 768px) {
+  .daggrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.dag {
+  padding: 20px 40px;
+  background-color: rgba(0, 0, 0, 0.1);
+
+  & ul {
+    list-style: none;
+  }
+
+  & li {
+    margin-bottom: 1em;
+  }
+}
+
+#bilder2 {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.smokin1 {
+  position: absolute;
+  top: 20%;
+  right: 45%;
+  width: 30%;
+  z-index: 2;
+}
+.smokin2 {
+  position: absolute;
+  top: 30%;
+  width: 30%;
+  left: 50%;
+}
+.cornergraphic2 {
+  position: absolute;
+  bottom: 30%;
+  left: 18%;
+  z-index: 6;
+}
+
+#informasjon {
+  & div {
+    max-width: 400px;
+    padding: 20px;
+  }
+  & ul {
+    list-style: none;
+  }
+  & li {
+    padding-bottom: 20px;
+  }
+  & h2 {
+    text-align: center;
+  }
+}
+
+#bilder3 {
+  height: 50vh;
+  max-width: 1140px;
+  margin: auto;
+  position: relative;
+}
+.smilende {
+  width: 80%;
+  max-width: 60vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#svar {
+  background: rgba(255, 255, 255, 0.1);
+
+  & .alert {
+    padding: 10px;
+    text-align: center;
+    background: var(--dark);
+    border-radius: 5px;
+    width: 450px;
+    display: none;
+  }
+  & form {
+    max-width: 450px;
+    margin: auto;
+    padding: 20px;
+  }
+  & input[type="text"],
+  input[type="email"] {
+    color: black;
+    background-color: var(--white);
+    font-size: 1.2rem;
+    border: 0;
+    border-radius: 5px;
+    float: right;
+    width: 80%;
+    height: 2rem;
+    padding: 5px;
+  }
+
+  & input[type="radio"] {
+    margin-right: 1em;
+  }
+
+  & input[type="checkbox"] {
+    margin-right: 0.5em;
+  }
+
+  & label {
+    line-height: 2;
+    margin-right: 1em;
+  }
+  & button {
+    font-family: inherit;
+    font-size: 1em;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: black;
+    border: 0;
+    background-color: var(--primary);
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 20px;
+    &:hover {
+      background-color: var(--white);
+    }
+  }
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(assets/kveld.jpg);
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+}
