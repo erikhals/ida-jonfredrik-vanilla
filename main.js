@@ -157,6 +157,12 @@ gsap.from(".cornergraphic3", {
   x: 100,
   y: -50,
 });
+gsap.from("#svarForm", {
+  scrollTrigger: "#svarForm",
+  opacity: 0,
+  scale: 0.8,
+  duration: 1,
+});
 gsap.from("footer", {
   scrollTrigger: {
     trigger: "#footer",
@@ -166,6 +172,7 @@ gsap.from("footer", {
   },
   opacity: 0,
 });
+
 // set the target on the form to point to a hidden iframe
 // some browsers need the target set via JavaScript, no idea why...
 
