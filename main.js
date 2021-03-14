@@ -6,7 +6,6 @@ document.getElementById("svarForm").target = "my-response-iframe";
 // detect when the iframe reloads
 var iframe = document.getElementById("my-response-iframe");
 var wrapper = document.getElementById("iframewrapper");
-iframe.addEventListener("load", console.log("loading"));
 
 if (iframe) {
   iframe.onload = function () {
