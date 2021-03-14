@@ -5,7 +5,9 @@ document.getElementById("svarForm").target = "my-response-iframe";
 
 // detect when the iframe reloads
 var iframe = document.getElementById("my-response-iframe");
-iframe.src = "about:blank";
+var wrapper = document.getElementById("iframewrapper");
+iframe.addEventListener("load", console.log("loading"));
+
 if (iframe) {
   iframe.onload = function () {
     //Show alert
@@ -16,5 +18,10 @@ if (iframe) {
     setTimeout(function () {
       document.querySelector(".alert").style.display = "none";
     }, 4000);
+
+    // iframe.parentNode.removeChild(iframe);
+    // wrapper.innerHTML =
+    //   "<iframe id='my-response-iframe' name='my-response-iframe'></iframe>";
+    // console.log(iframe);
   };
 }
