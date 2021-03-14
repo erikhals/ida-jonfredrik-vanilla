@@ -21,7 +21,7 @@
       </div>
       <section id="invitation">
         <div class="container">
-          <p>Ida & Jon Fredrik </p>
+          <p class="topheader">Ida & Jon Fredrik </p>
           <h3>Kleivstua</h3>
           <h2>24-26/9</h2>
           <div class="ornament"><img src="assets/Ornament-center.svg"/> </div>
@@ -35,35 +35,35 @@
       </div>
       <section id="program">
         <div class="container">
-          <h1>Helgens Program</h1>
+          <h1 id="programtitle">Helgens Program</h1>
           <div class="daggrid">
             <div class="dag">
               <h2>Fredag</h2>
               <ul>
-                <li><span>15:00</span><br> Mulighet for innsjekk</li>
-                <li><span>19:00 - 21:00</span><br> Grilling på Villa Utsikten</li>
-                <li><span>21:00</span><br>AKTIVITET (her må vi finne på noe)</li>
-                <li><span>00:00</span><br> Lokalet stenger</li>
+                <li class="programpost"><span>15:00</span><br> Mulighet for innsjekk</li>
+                <li class="programpost"><span>19:00 - 21:00</span><br> Grilling på Villa Utsikten</li>
+                <li class="programpost"><span>21:00</span><br>AKTIVITET (her må vi finne på noe)</li>
+                <li class="programpost"><span>00:00</span><br> Lokalet stenger</li>
               </ul>
             </div>
             <div class="dag">
               <h2>Lørdag</h2>
               <ul>
-                <li><span>08:00 - 10:00</span><br> Frokost</li>
-                <li><span>12:00</span><br> Liten lunsj</li>
-                <li><span>14:00</span><br> Vielse starter</li>
-                <li><span>16:00</span><br> Brudeparet ankommer hovedhuset</li>
-                <li><span>16:30</span><br> Til bords -
+                <li class="programpost"><span>08:00 - 10:00</span><br> Frokost</li>
+                <li class="programpost"><span>12:00</span><br> Liten lunsj</li>
+                <li class="programpost"><span>14:00</span><br> Vielse starter</li>
+                <li class="programpost"><span>16:00</span><br> Brudeparet ankommer hovedhuset</li>
+                <li class="programpost"><span>16:30</span><br> Til bords -
                   Bryllupsmiddagen starter</li>
-                <li><span>02:00</span><br> Baren stenger</li>
-                <li><span>02:30</span><br> Lokalene stenger</li>
+                <li class="programpost"><span>02:00</span><br> Baren stenger</li>
+                <li class="programpost"><span>02:30</span><br> Lokalene stenger</li>
               </ul>
             </div>
             <ul class="dag">
               <h2>Søndag</h2>
               <ul>
-                <li><span>09:00 - 11:00</span><br> Frokost</li>
-                <li><span>11:00</span><br> Senest utsjekk</li>
+                <li class="programpost"><span>09:00 - 11:00</span><br> Frokost</li>
+                <li class="programpost"><span>11:00</span><br> Senest utsjekk</li>
               </ul>
           </div>
         </div>
@@ -76,21 +76,21 @@
 
       <section id="informasjon">
         <div class="container">
-          <h1>Informasjon</h1>
+          <h1 id="infotitle">Informasjon</h1>
           <ul>
-            <li>
+            <li class="infobox">
               <img src="assets/Bed.svg" class="icon">
               <h2>Overnatting</h2>
               <p>Når dere svarer på invitasjon blir overnatting booket for dere. Pris 720 kr per pers/natt
                 Inkluderer frokost. (ved overnatting fredag-søndag inkl lunsj lørdag).
               </p>
             </li>
-            <li>
+            <li class="infobox">
               <img src="assets/Smukk.svg" class="icon">
               <h2>Barn</h2>
               <p>Bryllupet er i seg selv ikke et barnevennlig arrangement. Likevel har vi forståelse for at enkelte ikke har mulighet til å være borte fra sine små en hel helg, og kan ha behov for å ha med en barnevakt for å kunne delta på festlighetene. Dersom det er aktuelt, ta gjerne kontakt med brudeparet så finner vi en løsning!</p>
             </li>
-            <li>
+            <li class="infobox">
               <img src="assets/Activities.svg" class="icon">
               <h2>Aktiviteter i området</h2>
               <p>Lørdag formiddag vil det være litt tid til egen disposisjon før vielsen. Her er noen forslag til aktiviteter i nærmiljøet man kan sjekke ut enten lørdag, eller søndag etter utsjekk.</p>
@@ -102,18 +102,18 @@
                 <li>Hadeland glassblåseri</li>
               </ul>
             </li>
-            <li>
+            <li class="infobox">
               <img src="assets/Corona.svg" class="icon">
               <h2>Smittevern</h2>
               <p>Kleivstua tar ansvar for at arrangementet følger gjeldende smittevernregler. Her vil det likevel komme oppdatert informasjon om gjeldende smittevernregler på et nærmere tidspunkt. Dersom arrangementet ikke skulle la seg gjennomføre grunnet smittesituasjonen, vil dere få beskjed direkte fra brudeparet.
               </p>
             </li>
-            <li>
+            <li class="infobox">
               <img src="assets/Paper.svg" class="icon">
               <h2>Taler</h2>
               <p>NAVN er vår toastmaster, så hvis du ønsker å si noen ord, ta kontakt med ham på epost eller facebook.</p>
             </li>
-            <li>
+            <li class="infobox">
               <img src="assets/Kleshenger.svg" class="icon">
               <h2>Kleskode</h2>
               <p>Kleskode mangler foreløpig.</p>
@@ -157,11 +157,13 @@
           <div id="iframewrapper"><iframe id="my-response-iframe" name="my-response-iframe"></iframe></div>
         </div>
       </section>
-      <footer>
+      <footer id="footer">
         <div class="ornament"><img src="assets/Ornament-center.svg"/> </div>
       </footer>
       <!-- <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
       <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
       <script src="main.js"></script> 
 </body>
 </html>
