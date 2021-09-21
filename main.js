@@ -118,7 +118,7 @@ var infotl = gsap.timeline({
   scrollTrigger: {
     trigger: "#informasjon",
     start: "top bottom",
-    end: "center 200px",
+    end: "1000px 200px",
     scrub: 3,
   },
 });
